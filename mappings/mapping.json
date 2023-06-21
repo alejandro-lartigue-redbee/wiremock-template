@@ -1,0 +1,20 @@
+{
+    "request": {
+      "method": "POST",
+      "urlPattern": "/api",
+      "bodyPatterns": [
+        {
+          "equalToJson": { "user": "usuario", "password": "contraseña" },
+          "ignoreArrayOrder": true
+        }
+      ]
+    },
+    "response": {
+      "status": 200,
+      "bodyFileName": "response.json",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  }
+  
